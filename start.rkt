@@ -6,6 +6,7 @@
 (define los1 (cons "jam" (cons "jelly" (cons "catmosphere" empty))))
 
 ;;List-of-string -> List-of-string
+;;construct a list of strings that start with cat
 (define (s>5 alos) 
   (cond [(empty? alos) empty]
         [else (if (string=? (substring (first alos) 0 3) "cat")
