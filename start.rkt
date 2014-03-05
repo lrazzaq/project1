@@ -5,7 +5,8 @@
 
 (define los1 (cons "jam" (cons "jelly" (cons "catmosphere" empty))))
 
-(define (s>5 alos)
+;;List-of-string -> List-of-string
+(define (s>5 alos) 
   (cond [(empty? alos) empty]
         [else (if (string=? (substring (first alos) 0 3) "cat")
                   (cons (first alos) (s>5 (rest alos)))
